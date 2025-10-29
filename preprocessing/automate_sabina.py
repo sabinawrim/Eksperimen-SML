@@ -40,7 +40,7 @@ def preprocess_data(df: pd.DataFrame):
     return X_train, X_test, y_train, y_test
 
 
-def save_preprocessed_data(X_train, X_test, y_train, y_test, output_dir="./pima_diabetes_processed"):
+def save_preprocessed_data(X_train, X_test, y_train, y_test, output_dir="preprocessing/pima_diabetes_processed"):
     """Menyimpan hasil preprocessing ke folder output"""
     os.makedirs(output_dir, exist_ok=True)
 
